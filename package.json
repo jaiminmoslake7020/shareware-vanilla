@@ -1,24 +1,42 @@
 {
-  "name": "Vanila TypeScript Project",
+  "name": "Vanila TypeScript Project - Shareware",
   "version": "0.0.1",
   "description": "",
   "private": true,
   "keywords": [
-    ""
+    "Shareware", "SSN"
   ],
   "license": "",
   "author": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "rm -rf build && npx webpack --mode production --env=production",
+    "build:dev": "rm -rf build && npx webpack --mode development --env=development",
+    "dev": "webpack serve --mode development --stats-error-details --env=development"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "webpack": "^5.91.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@types/node": "^22.10.1",
+    "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^3.0.3",
+    "css-loader": "^7.1.2",
+    "firebase": "11.0.2",
+    "fs": "^0.0.1-security",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.49",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.15",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0"
+    "webpack-dev-server": "^5.1.0",
+    "dotenv": "^16.4.5"
   }
 }
