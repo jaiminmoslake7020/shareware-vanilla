@@ -4,14 +4,16 @@
   "description": "",
   "private": true,
   "keywords": [
-    "Shareware", "SSN"
+    "Shareware",
+    "SSN"
   ],
   "license": "",
   "author": "",
   "scripts": {
     "build": "rm -rf build && npx webpack --mode production --env=production",
     "build:dev": "rm -rf build && npx webpack --mode development --env=development",
-    "dev": "webpack serve --mode development --stats-error-details --env=development"
+    "dev": "webpack serve --mode development --stats-error-details --env=development",
+    "prod:serve": "serve build/"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -21,9 +23,11 @@
     "babel-loader": "^9.2.1",
     "browser-sync": "^3.0.3",
     "css-loader": "^7.1.2",
+    "dotenv": "^16.4.5",
     "firebase": "11.0.2",
     "fs": "^0.0.1-security",
     "html-webpack-plugin": "^5.6.3",
+    "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.9.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.49",
@@ -37,6 +41,6 @@
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
-    "dotenv": "^16.4.5"
+    "serve": "^14.2.4"
   }
 }

@@ -26,7 +26,6 @@ export const IllusionWrapper = () : IllusionWrapperType => {
       }
     });
 
-    console.log("getValidationResult()", getValidationResult());
     if (typeof getValidationResult() === "boolean") {
       getDiv().classList.add('results-available');
       getDiv().classList.remove(`validation-${!getValidationResult() ? 'success' : 'error'}`);
