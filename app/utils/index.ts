@@ -12,3 +12,11 @@ export const applyClassList = (el: any | HTMLElement, classList: string) :any | 
   });
   return el;
 }
+
+
+export const removeCharacters = (str: string, char: string) => {
+  if (str.indexOf(char) !== -1) {
+    return str.replace(char,'');
+  }
+  return str;
+}

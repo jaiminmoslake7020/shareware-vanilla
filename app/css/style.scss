@@ -1,0 +1,76 @@
+@use "base";
+@use "components";
+@use "layout";
+
+#root{
+  @apply w-full h-screen;
+}
+
+.app-wrapper{
+  @apply w-full flex justify-center items-center h-screen;
+}
+
+.real-input-box{
+  @apply opacity-0;
+}
+
+
+@keyframes opacity-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+}
+
+.illusion-wrapper{
+  @apply flex gap-2 ;
+
+  .illusion-input-wrapper{
+    @apply w-8 h-8 sm:w-12 sm:h-12;
+    @apply rounded bg-white flex items-center justify-center cursor-pointer;
+
+    .cursor-supporter{
+      @apply hidden;
+    }
+
+    &.cursor-is-here{
+      @apply relative bg-slate-50;
+
+      .cursor-supporter{
+        @apply flex absolute top-0 left-3 right-0 bottom-0 w-full items-center;
+
+        &:before{
+          content: "|";
+          animation: opacity-animation 1s infinite;
+        }
+
+      }
+
+    }
+
+    &.input-filled{
+      @apply bg-slate-200;
+    }
+
+
+  }
+
+  &.results-available{
+
+    &.validation-success{
+      .illusion-input-wrapper{
+        @apply bg-green-200 text-green-500 font-semibold;
+      }
+    }
+
+    &.validation-error{
+      .illusion-input-wrapper{
+        @apply bg-red-200 text-red-500 font-semibold;
+      }
+    }
+
+  }
+
+}

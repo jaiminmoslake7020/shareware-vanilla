@@ -1,4 +1,5 @@
 import './css/style.scss';
+import './store/store';
 import {
   App
 } from './components/App';
