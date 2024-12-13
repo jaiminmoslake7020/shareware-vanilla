@@ -10,8 +10,9 @@ I have put efforts so my skills with building tools such as webpack and babel, a
 
 
 ## Online Links
-[Github repo](https://github.com/jaiminmoslake7020/shareware-vanilla/)
-[Deployed app with Github pages](https://jaiminmoslake7020.github.io/shareware-vanilla/)
+
+- [Github Repo](https://github.com/jaiminmoslake7020/shareware-vanilla/)
+- [Deployed app with Github pages](https://jaiminmoslake7020.github.io/shareware-vanilla/)
 
 ## How to run application locally.
 
