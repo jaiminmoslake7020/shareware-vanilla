@@ -30,8 +30,10 @@ It requires that computer has node installed and npm installed. Follow this [lin
 
 Now you have at this point node and npm installed at your local machine.
 
+```
     npm install
     npm run build
     npm run prod:serve
+```
 
 **serve is using port 3000.**
