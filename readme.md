@@ -14,11 +14,16 @@ I have put efforts so my skills with building tools such as webpack and babel, a
 - [Github Repo](https://github.com/jaiminmoslake7020/shareware-vanilla/)
 - [Deployed app with Github pages](https://jaiminmoslake7020.github.io/shareware-vanilla/)
 
+## Prerequisites
+
+It requires that computer has node installed and npm installed. Follow this [link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) if it is not installed.
+
+- Node
+- NPM
+
 ## How to run application locally.
 
 [Download code zip from Github](https://github.com/jaiminmoslake7020/shareware-vanilla/archive/refs/heads/main.zip)
-
-It requires that computer has node installed and npm installed. Follow this [link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) if it is not installed.
 
 Now you have at this point node and npm installed at your local machine.
 
