@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy ShareWare SSN App
+name: Deploy ShareWare SSN App with Github Actions
 
 on:
   # Runs on pushes targeting the default branch
