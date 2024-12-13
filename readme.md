@@ -10,6 +10,7 @@ This app is developed with ES6 but has support for ES5 supported browsers browse
 
 I have put efforts so my skills with building tools such as webpack and babel, and knowledge of TS/JS can be visible. As well as my UX with CSS handling can be viewed in this demo project.
 
+I have also added Github action which builds and deploys app to Netlify on push to main branch.
 
 ## Online Links
 
