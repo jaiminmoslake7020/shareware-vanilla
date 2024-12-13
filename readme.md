@@ -6,6 +6,8 @@ This app takes user input and it validates against suggested rules in document t
 
 This one is developed with TypeScript, WebPack, Babel, TailwindCSS and Html. This solution does not use any framework but only uses simple TypeScript. One can check codebase inside app folder where index.js is entry point.
 
+This app is developed with ES6 but has support for ES5 supported browsers browsers with babel's presets.
+
 I have put efforts so my skills with building tools such as webpack and babel, and knowledge of TS/JS can be visible. As well as my UX with CSS handling can be viewed in this demo project.
 
 
@@ -32,5 +34,3 @@ Now you have at this point node and npm installed at your local machine.
     npm run prod:serve
 
 **serve is using port 3000.**
-
-
