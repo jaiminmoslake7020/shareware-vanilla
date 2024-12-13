@@ -2,7 +2,11 @@ import {useDiv, useState} from '../base/Div';
 import {RealInputBox} from './real-input-box/RealInputBox';
 import {IllusionWrapper, IllusionWrapperType} from './illusion-wrapper/IllusionWrapper';
 
-export const SinInputWrapper = () => {
+export type SinInputWrapperType = {
+  render: () => HTMLDivElement
+};
+
+export const SinInputWrapper = () : SinInputWrapperType => {
   const {
     getDiv, setDiv
   } = useDiv();

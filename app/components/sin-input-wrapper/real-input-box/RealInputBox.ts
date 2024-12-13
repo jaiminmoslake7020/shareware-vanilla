@@ -1,7 +1,6 @@
 import {useDiv} from '../../base/Div';
 import {useTextInput} from '../../base/Input';
 import {getInputValue, setInputValue} from '../../../store/store';
-import {removeCharacters} from '../../../utils';
 
 export type RealInputBoxType = {
   render: () => HTMLDivElement

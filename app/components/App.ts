@@ -1,7 +1,11 @@
 import {useDiv, useState} from './base/Div';
 import {SinInputWrapper} from './sin-input-wrapper/SinInputWrapper';
 
-export const App = () => {
+export type AppType = {
+  render: () => HTMLDivElement
+};
+
+export const App = () : AppType => {
   const {
     getDiv, setDiv
   } = useDiv();
