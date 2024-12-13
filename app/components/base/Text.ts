@@ -1,5 +1,22 @@
 import {applyClassList, createEL} from '../../utils';
 
+export const Ul = (classList?: string) : HTMLUListElement => {
+  let el = createEL('ul') as HTMLUListElement;
+  if (classList) {
+    el = applyClassList(el, classList);
+  }
+  return el;
+}
+
+export const Li = (text: string, classList?: string) : HTMLLIElement => {
+  let el = createEL('li') as HTMLLIElement;
+  if (classList) {
+    el = applyClassList(el, classList);
+  }
+  el.textContent = text;
+  return el;
+}
+
 export const Text = (as: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',text: string, classList?: string) => {
   let el = createEL(as);
   if (classList) {

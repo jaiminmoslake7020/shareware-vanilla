@@ -11,6 +11,15 @@ export const Input = (name: string, value: string, id: string, classList?: strin
   return input;
 }
 
+export const Label = (text: string, classList?: string) : HTMLLabelElement => {
+  let label = createEL('label') as HTMLLabelElement;
+  if (classList) {
+    label = applyClassList(label, classList);
+  }
+  label.textContent = text;
+  return label;
+}
+
 export const TextInput = (name: string, value: string, id: string, classList?: string) : HTMLInputElement => {
   const input = Input(name, value, id, classList);
   input.setAttribute('type', 'text');
